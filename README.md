@@ -47,7 +47,7 @@ Per utilizzare Librarsi in Volo sul tuo computer locale, segui questi passaggi:
    - Assicurati di avere Git installato sul tuo computer.
    - Esegui il comando di clone nella tua directory desiderata:
      ```bash
-     git clone https://github.com/chiarafar18/bookblog.git
+     git clone https://github.com/ChiaraFar18/bookblog.git
      ```
 
 2. **Apertura dell'Homepage:**
