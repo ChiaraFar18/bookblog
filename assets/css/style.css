@@ -1,0 +1,579 @@
+.alice-regular {
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*font importato da google*/
+  
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/angellWhite.otf') format('opentype');
+    
+}
+/*font salvato in locale*/  
+
+html{
+    background-color: #e0b0ff;
+    box-sizing: border-box;    
+    
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);    
+    grid-template-areas:
+    "menu menu menu menuSecondario"
+    "hero hero hero hero";  
+    background-color: white; 
+    margin: 50px 50px 0 50px ; 
+}
+
+.menuRidotto{
+    display: none;
+}
+
+.menu{
+    grid-area: menu;    
+    height: 100px; 
+      
+    
+}
+#tendinaMenu{
+    display:none; 
+}
+.menuSecondario{
+    grid-area: menuSecondario;
+    display: flex;
+    justify-content: flex-end;  
+    align-items: center;        
+    height: 100px;
+    
+}
+
+ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;   
+    padding:0 5px 0 5px; 
+    margin: 10px;
+    list-style: none;
+    gap: 30px;
+    font-family: "Alice", serif;
+    font-size: 24px;
+    
+}
+
+.logo{
+    
+    height: 90px;  
+    
+}
+
+a{
+    color: black;
+    text-decoration: none; 
+}
+
+a:hover{
+    
+    color:#6050dc;
+}
+
+.searchInput{
+    height: 50px; 
+    border-radius: 10px;
+    border: 3px black solid; 
+}
+
+/*questo serve a annullare impostazione input di default del browser*/
+.searchInput::-webkit-search-cancel-button,
+.searchInput::-webkit-search-clear-button {
+  display: none;
+}
+
+.searchIcon{
+    position: absolute;
+    transform: translateX(-100%); 
+   
+
+}
+
+
+h1{
+    
+    font-family: 'MyFont', serif;
+    text-shadow: 2px 2px 3px #251d60;
+    color: #e0b0ff;
+    font-size: 108px;
+    font-weight: 300; 
+    letter-spacing: 2px;
+    margin: 0 60px 0 20px;
+    
+    z-index: 2;    
+}
+h3{
+    font-family: "Alice", serif; 
+    font-style: italic;
+    color: #e0b0ff;
+    font-weight: 200;
+    margin: -30px 10px 20px 0; 
+   
+    z-index: 2; 
+}
+
+.hero{
+    grid-area: hero;
+    background-color: white;
+    transition: ease-out 0.5s;
+    background-size: cover;   
+    background-repeat: no-repeat; 
+    background-position: center center;
+    height:500px;
+    margin-top: 20px;
+    
+    
+    
+   
+}
+
+.overlay {   
+    width: 100%;
+    height: 100%;
+    background-color: rgba(87, 85, 85, 0.6); /* Colore di sfondo con trasparenza */
+    z-index: 1; /* Assicura che l'overlay sia posizionato sopra l'immagine */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);    
+    grid-template-areas:
+    "novità novità novità novità"
+    "banner corpo corpo sidebar"
+    "banner corpo corpo chat";  
+    background-color: white;
+    margin: 0 50px 0 50px ;
+    padding-bottom: 20px; 
+}
+
+.banner{
+    grid-area: banner;
+    background-color: #6050dc;
+    margin: 20px 10px 0 20px;
+}
+
+.novità{
+    grid-area: novità;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.novità h3{
+    color: black;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.novità ul li img {
+    width: 300px;
+    height: auto;
+}
+
+.novità ul li img:hover{
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+.corpo{
+    grid-area: corpo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.corpo h3 {
+    color: black;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+}
+.corpo ul{
+    display: flex;
+    flex-direction: column;
+}
+.corpo ul li{
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "immagine titolo titolo"
+    "immagine trama trama"
+    "immagine trama trama";
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0b0ff;
+    
+}
+.corpo ul li img {
+    grid-area: immagine;
+    width: 200px;
+    height: auto;
+}
+.corpo ul li h4{
+    grid-area: titolo;
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.corpo ul li p{
+    grid-area: trama;
+    font-family: "Alice", serif; 
+    font-size: 14px;
+    margin-top: 0;
+    font-weight: 300;
+}
+
+.sidebar{
+    grid-area: sidebar;    
+    margin: 20px 10px 0 20px;
+    background-color: white;
+    border-left: 1px solid #e0b0ff; 
+    padding: 5px;   
+    
+}
+
+.sidebar h4{
+    font-family: 'Alice',serif;    
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 0;
+    margin: 0 0;  
+
+}
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 5px; 
+    
+}
+
+.sidebar ul li{
+    border-bottom: 1px solid #e0b0ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sidebar ul li p{
+    align-self: flex-end;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.chat{
+    grid-area: chat;    
+    margin: 0 10px 0 20px;
+    background-color: white;
+    border-left: 1px solid #e0b0ff; 
+    padding: 5px; 
+    
+}
+
+
+footer{
+    margin: 0 50px 0 50px ;     
+    background-color: #6050dc; 
+    padding-bottom: 10px;
+    font-family: "Alice", serif;
+            
+}
+
+.contenuti{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-areas: 
+    "contatti links about";
+}
+
+.contatti{
+    grid-area: contatti; 
+    margin: 10px;
+}
+.links{
+    grid-area: links; 
+    margin: 10px
+}
+    
+.links ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+}
+
+.links ul a:hover {
+    color: white;
+}
+
+.about{
+    grid-area: about;
+    margin: 10px;
+    
+}
+.about img{
+    box-shadow: 2px 2px 3px #251d60;
+}
+.dropMenu{
+    background-color: #6050dc;     
+    position: absolute; 
+    top: 170px;
+    right:57px;    
+    width: 175px;    
+    z-index: 2;   
+    padding: 10px;
+    margin-bottom: 0;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: -4px 4px 4px #251d60;
+}
+.dropMenu p{
+    margin: 5px 0;
+    
+}
+
+.dropMenu input{
+    font-family: 'Alice', serif;
+    border-radius: 5px; 
+    background-color: white;   
+}
+
+.submit:hover{
+    transform: scale3d(1.1, 1.1, 1);
+    color: #6050dc;
+
+}
+
+#tendina {
+    display: none;
+}
+
+
+@media only screen and (max-width: 900px) {
+    
+    .menu{
+        display: none;
+    }
+    .menuSecondario{
+        display: none;
+    }
+    .body{
+        width: 100%;
+    }
+    header{
+        display: grid;
+        grid-template-columns: 1fr;    
+        grid-template-areas:
+        "menuRidotto"
+        "hero"; 
+        margin: 0;
+        width:100%;  
+    }
+
+    .menuRidotto{
+        grid-area: menuRidotto;       
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 30px;
+        font-family: "Alice", serif;
+        font-size: 1.2rem;
+        padding: 1rem;
+        margin: 0; 
+        
+    }
+    
+    .logoHamb{
+        max-width: 100px; 
+    }
+    .dropMenu{
+        top: 105px;
+        right:7px;
+        z-index: 3;
+    }
+    
+    .tendinaMenu{        
+        background-color: #6050dc;     
+        position: absolute; 
+        top: 105px;
+        right:7px;    
+        width: 175px;    
+        z-index: 3;   
+        padding: 10px;
+        margin-bottom: 0;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        box-shadow: -4px 4px 4px #251d60;
+    }
+    .tendinaMenu ul{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .tendinaMenu ul li, li a{
+        color: white;
+        font-size: 14px;
+        margin: 0 0; 
+        gap: 0; 
+    }
+
+    .tendinaMenu ul li a:hover{
+        color: white;
+        text-decoration: underline;
+    }
+    
+    .hero{
+        grid-area: hero;
+    }
+
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "novità"
+        "banner"
+        "corpo"
+        "sidebar"
+        "chat";
+        background-color: white;
+        margin:0; 
+    }
+
+    .novità{
+        grid-area: novità;
+    }
+    .novità ul li img {
+        width: 8rem;
+        height: auto;
+    }
+
+    
+    .banner{
+        grid-area: banner;
+    }
+   
+    
+
+    footer{
+        margin: 0;     
+        background-color: #6050dc; 
+        padding-bottom: 10px;
+        font-family: "Alice", serif;
+                
+    }
+    .sidebar{
+        grid-area: sidebar;   
+        display: flex;
+        flex-direction: column;
+        margin: 0; 
+        background-color: white;        
+        padding: 5px;   
+        
+    }
+    .sidebar ul {
+        display: flex;  
+        flex-direction: column; 
+        width:100%;   
+        padding-top: 5px; 
+        margin: 0; 
+
+      
+    }
+    .sidebar ul li, li a{
+        padding: 5px;
+        color: black;
+        width: 100%;
+        margin:0; 
+        gap:0;         
+    }    
+
+    .sidebar ul li a:visited{
+        text-decoration: none;
+        color: black; 
+    }
+    .sidebar ul li p{
+        margin:0; 
+    }
+
+    .corpo ul li{
+        grid-area: corpo;
+        display: grid; 
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "immagine"
+        "titolo"
+        "trama";        
+        padding-bottom: 10px;
+        border-bottom: 2px solid #e0b0ff;
+        
+    }
+    .immagine{
+        grid-area: immagine;
+    }
+    .titolo{
+        grid-area: titolo;
+    }
+    .trama{
+        grid-area: trama;
+    }
+
+    .chat{
+        grid-area: chat;
+        margin: 0 10px 0 20px;
+        background-color: white;         
+        padding: 5px; 
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+  
+@media only screen and (max-width: 490px){
+
+    .novità ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%; 
+    }
+   
+
+    .contenuti{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:        
+        "contatti"
+        "links"
+        "about";
+        width:100%;
+    }
+
+    .chat{
+        grid-area: chat;
+        margin: 0 10px 0 20px;
+        background-color: white;         
+        padding: 5px; 
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+
+}   

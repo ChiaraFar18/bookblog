@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HOME PAGE</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+
+  
+    </head>
+    <body>
+        
+        <header>
+            <div class="menuRidotto">
+                <div class="accedi">
+                    <a href="#" onclick="gestisciMenu()">Accedi</a>
+                </div>
+                <!--hamburger-->
+                <div class="hamburger">
+                    <a href="#" onclick="apriMenu()"><img class="logoHamb" src="assets/img/Librarsi1.png" alt="logo" ></a> 
+                </div>
+            </div>
+            <!--tendina a discesa-->
+            <div class="tendinaMenu" id="tendinaMenu">
+                <ul>
+                    <li><a href="#">Novità</a></li>
+                    <li><a href="#">Recensioni</a></li>
+                    <li><a href="#">Chi siamo</a></li>                
+                    <li><a href="#">Contatti</a></li>
+                    <li>Cerca <input type="text"> <input type="submit" value="Vai"></li>   
+                </ul>
+            </div>
+           
+            <!--menu esteso-->            
+            <div class="menu">
+                <ul>
+                    <li><a href="#"><img class="logo" src="assets/img/Librarsi1.png" alt="logo"></a></li>
+                    <li><a href="#">Novità</a></li>
+                    <li><a href="#">Recensioni</a></li>
+                    <li><a href="#">Chi siamo</a></li>                
+                    <li><a href="#">Contatti</a></li>                            
+                </ul>
+            </div>
+            <div class="menuSecondario">
+                <ul>
+                    <li>
+                        <input type="search" class="searchInput" placeholder="Cerca nel sito...">
+                        <a href="#"><img src="assets/img/lente.png" alt="incona di ricerca" class="searchIcon"></a>
+                    </li> 
+                    <li><a href="#" onclick="gestisciMenu()">Accedi</a></li>  
+                    
+                </ul>                
+            </div>
+            <!--tendina a discesa-->
+            <div class="dropMenu" id="tendina">                
+                <input type="text" placeholder="Username">                
+                <input type="password" placeholder="Password">
+                <input class="submit" style="padding: 5px; margin-top: 5px;" type="submit" value="Accedi">
+                <p>Non sei ancora registrato? <a href="#" style="color: white; text-decoration: underline;">Registrati</a></p>
+                <p>Hai dimenticato la password? <a href="#" style="color: white;text-decoration: underline;">Recuperala</a></p>
+            </div>
+        
+        
+            <!--hero-->
+            <div class="hero" id="hero" onload="cambiaImmagine()">                     
+                <div class="overlay">
+                    <h1>Librarsi in volo</h1> 
+                    <h3>Bookblog per chi ama volare con la fantasia</h3>   
+                </div>
+                
+            </div>
+        </header>
+
+        <main>           
+
+            <div class="novità">
+                <h3>Ultime uscite</h3>
+                <ul>
+                    <li><a href="#"><img src="assets/img/ali.png" alt="Le ali della città"></a></li>
+                    <li><a href="#"></a><img src="assets/img/arcani.png" alt="L'alchimia degli arcani"></a></li>
+                    <li><a href="#"></a><img src="assets/img/ombre.png" alt="Le ombre del cuore"></a></li>
+                    <li><a href="#"></a><img src="assets/img/sussurri.png" alt="Sussurri mortali"></a></li>
+                </ul>
+
+            </div>
+
+            
+            <div class="banner">
+                <p>Qui va la pubblicità</p>
+            </div>
+
+            <div class="corpo">
+                <h3>Le nostre recensioni</h3>
+                <ul>
+                    <li>
+                        <img src="assets/img/ali.png" alt="Le ali della città">
+                        <h4><a href="#">Dante Dracorealis - "Le ali della città"</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quos tempore. Praesentium totam minus sunt beatae ad? Accusamus neque quos, quas voluptas distinctio saepe. Molestiae doloremque eaque saepe ipsum nisi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias culpa fugit aliquid perspiciatis autem iure. Iusto provident neque quas perspiciatis iure repellendus placeat dicta sed commodi! Modi at quo tempore!</p>
+                    </li>
+                    <li>
+                        <img src="assets/img/arcani.png" alt="L'alchimia degli arcani">
+                        <h4><a href="#">Elyon Drakonos - "L'alchimia degli arcani"</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quos tempore. Praesentium totam minus sunt beatae ad? Accusamus neque quos, quas voluptas distinctio saepe. Molestiae doloremque eaque saepe ipsum nisi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ad, iste dignissimos, nam hic facere dolores minus laboriosam eius saepe similique, sunt corporis illum tempore magnam temporibus nostrum dolorem dolorum.</p>  
+                    </li>
+                    <li>
+                        <img src="assets/img/ombre.png" alt="Le ombre del cuore">
+                        <h4><a href="#">Serena Delfino - "Le ombre del cuore"</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quos tempore. Praesentium totam minus sunt beatae ad? Accusamus neque quos, quas voluptas distinctio saepe. Molestiae doloremque eaque saepe ipsum nisi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ad, iste dignissimos, nam hic facere dolores minus laboriosam eius saepe similique, sunt corporis illum tempore magnam temporibus nostrum dolorem dolorum.</p>  
+                    </li>
+                    <li>
+                        <img src="assets/img/sussurri.png" alt="Sussurri mortali">
+                        <h4><a href="#">Kyra Noir - "Sussurri mortali"</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quos tempore. Praesentium totam minus sunt beatae ad? Accusamus neque quos, quas voluptas distinctio saepe. Molestiae doloremque eaque saepe ipsum nisi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ad, iste dignissimos, nam hic facere dolores minus laboriosam eius saepe similique, sunt corporis illum tempore magnam temporibus nostrum dolorem dolorum.</p>  
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar">
+                <h4 style="font-weight: 600;">Prossime uscite</h4>
+                <ul>
+                    <li><a href="#">
+                            <h4>Prossima uscita: "Il coraggio di una madre" <br>di Chiara Calzone</h4>
+                        </a>
+                        <p>25 febbraio 2024</p>
+                    </li>
+                
+                    <li><a href="#">
+                            <h4>Prossima uscita: "Pagine di storia antica" <br>di A. Vannini</h4>
+                        </a>
+                        <p>25 febbraio 2024</p>
+                    </li>
+                
+                    <li><a href="#">
+                            <h4>Prossima uscita: "La gara della mia vita" <br>di Cosimo Guerra</h4>
+                        </a>
+                        <p>25 febbraio 2024</p>
+                    </li>
+                
+                    <li><a href="#">
+                            <h4>Prossima uscita: "Invictus games: la cronaca" <br>di Harry Windsor</h4>
+                        </a>
+                        <p>25 febbraio 2024</p>
+                    </li>
+                
+                    <li><a href="#">
+                            <h4>Prossima uscita: "Il coraggio di una madre" <br>di Chiara Calzone</h4>
+                        </a>
+                        <p>25 febbraio 2024</p>
+                    </li>
+                
+                </ul>
+            </div>
+
+            <div class="chat">
+                <h4 style="font-weight: 600;">Chat</h4>
+                <label for="messaggio">Scrivi qui il tuo messaggio:</label>
+                <textarea name="messaggio" id="messaggio" cols="40" rows="10"></textarea>
+                <!--il tag textarea serve per creare un campo di input di più righe e colonne-->
+                <input type="submit" value="Invia">
+            </div>
+        </main>
+    
+        <footer>
+            <div class="contenuti">
+                
+                <div class="contatti">
+                    <h2>Contatti</h2>
+                    <p><b>Email</b>: info@librarsi.com</p>
+                    <p><b>Telefono</b>: +123 456 789</p>
+                    <p><b>Seguici</b>:</p>
+                    <a href="#"><img src="assets/img/ig.png" alt="Instagram"></a>
+                    <a href="#"><img src="assets/img/fb.png" alt="Facebook"></a>
+                </div>
+                <div class="links">
+                    <h2>Link Utili</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Contattaci</a></li>
+                    </ul>
+                </div>
+                <div class="about">                    
+                    <h2 >Chi siamo</h2>
+                    <img class="logo" src="assets/img/Librarsi1.png" alt="logo">
+                    <p>Il nostro blog è dedicato a tutti coloro per cui leggere è vitale come respirare.<br>La nostra community è composta da lettori avidi, sognatori a cui piace volare con la fantasia.</p>
+                    
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                <!--&copy indica il simbolo del copyright-->
+                <p style="text-align: center;">&copy; 2024 Il Tuo Sito Web. Tutti i diritti riservati.</p>
+
+            </div>
+        </footer>
+        
+        <script src="assets/js/script.js" async defer></script>
+    </body>
+</html>
